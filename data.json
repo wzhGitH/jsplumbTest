@@ -1,0 +1,49 @@
+{
+    "dataList": [{
+        "id": "a1",
+        "type": "start",
+        "left": "50",
+        "top": "100"
+    },{
+        "id": "a2",
+        "type": "flow",
+        "left": "300",
+        "top": "100"
+    },{
+        "id": "a3",
+        "type": "judge",
+        "left": "600",
+        "top": "50"
+    },{
+        "id": "a4",
+        "type": "end",
+        "left": "850",
+        "top": "350"
+    },{
+        "id": "a5",
+        "type": "tag",
+        "left": "186",
+        "top": "82"
+    }],
+    "lineList": [{
+        "startId": "a1",
+        "targetId": "a2",
+        "startPaint": "Right",
+        "targetPaint": "Left"
+    },{
+        "startId": "a2",
+        "targetId": "a3",
+        "startPaint": "Right",
+        "targetPaint": "Left"
+    },{
+        "startId": "a3",
+        "targetId": "a4",
+        "startPaint": "Right",
+        "targetPaint": "Left"
+    },{
+        "startId": "a3",
+        "targetId": "a2",
+        "startPaint": "Bottom",
+        "targetPaint": "Left"
+    }]
+}

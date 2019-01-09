@@ -1,0 +1,182 @@
+blockquote, body, button, dd, div, dl, dt, form, h1, h2, h3, h4, h5, h6, input, li, ol, p, pre, td, textarea, th, ul {
+    margin: 0;
+    padding: 0;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+:after, :before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+#item_left {
+    width: 200px;
+    height: 200px;
+    background: #999;
+    position: absolute;
+    left: 50px;
+    top: 10px;
+}
+
+#item_right {
+    position: absolute;
+    width: 200px;
+    left: 400px;
+    top: 10px;
+    height: 200px;
+    background: #999;
+}
+.float-left{
+    float: left;
+}
+.width-min{
+    padding: 10px;
+    width: 15%;
+    border-right: 1px solid #ccc;
+}
+.width-max{
+    padding: 10px;
+    position: relative;
+    width: 85%;
+}
+.clear-float{
+    position: relative;
+}
+.clear-float::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.left-btn-list{
+    width: 140px;
+    margin: auto;
+}
+.left-btn-item{
+    position: relative;
+    width: 140px;
+    padding: 40px 0;
+    user-select: none;
+}
+.padding-bottom-max{
+    padding-bottom: 120px;
+}
+.padding-top-max{
+    padding-top: 80px;
+}
+.left-tag-content{
+    text-align: center;
+    padding: 5px 0;
+    border: 1px solid rgba(60,141,188,0.5);
+    border-radius: 3px;
+    cursor: move;
+}
+.left-btn-content{
+    text-align: center;
+    padding: 15px 0;
+    border: 1px solid rgba(60,141,188,0.5);
+    border-radius: 30px;
+    cursor: move;
+}
+.border-rect{
+    border-radius: 5px;
+}
+.rotateZ-btn{
+    width: 100%;
+    height: 100%;
+    margin-top: -30px;
+    transform: rotateZ(45deg);
+    border: 1px solid rgba(60,141,188,0.5);
+    cursor: move;
+}
+.rotateZ-item{
+    position: relative;
+    width: 110px;
+    height: 110px;
+    margin: auto;
+    user-select: none;
+}
+.rotateZ-item .left-btn-content{
+    border: none;
+}
+.rotateZ-text{
+    text-align: center;
+    position: absolute;
+    transform: rotateZ(-45deg);
+    top: 40px;
+    width: 100%;
+    z-index: -1;
+}
+.create-tag-item{
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 10;
+}
+.create-item{
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.create-item .create-btn-content{
+    text-align: center;
+    padding: 15px 25px;
+    border: 1px solid rgba(60,141,188,0.5);
+    border-radius: 30px;
+    min-width: 140px;
+    user-select: none;
+}
+.create-tag-content{
+    text-align: center;
+    padding: 3px 5px;
+    border: 1px solid rgba(60,141,188,0.5);
+    border-radius: 3px;
+    min-width: 110px;
+    user-select: none;
+    background: #fff;
+    font-size: 12px;
+}
+.create-flow-content{
+    text-align: center;
+    padding: 15px 25px;
+    border: 1px solid rgba(60,141,188,0.5);
+    border-radius: 5px;
+    min-width: 140px;
+    user-select: none;
+}
+.create-judge-content{
+    width: 110px;
+    height: 110px;
+    transform: rotateZ(45deg);
+    border: 1px solid rgba(60,141,188,0.5);
+    user-select: none;
+}
+.create-judge-item{
+    width: 150px;
+    height: 150px;
+}
+.create-judge-item .create-judge-content{
+    margin: 20px auto 0;
+}
+
+.dialog-right-menu{
+    display: none;
+    position: fixed;
+    box-shadow: 0 0 3px #999;
+    background: #fff;
+    border-radius: 2px;
+}
+.dialog-item{
+    padding: 6px 15px 6px 15px;
+}
+.dialog-item .fa{
+    padding-right: 10px;
+}
+.dialog-item:hover{
+    background: #eee;
+    cursor: pointer;
+}
